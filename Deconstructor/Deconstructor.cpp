@@ -2,10 +2,13 @@
 #include <iostream>
 using namespace std;
 
-Class angka{
+class angka {
+
 private:
 	int* arr;
 	int panjang;
 public:
-	angka(int); 
-}
+	angka(int);
+	~angka();
+
+};
