@@ -4,6 +4,10 @@ using namespace std;
 
 class mahasiswa
 {
-	public
+public:
+	static int nim;
+	int id;
+	string nama;
+
 };
 
