@@ -5,11 +5,11 @@ using namespace std;
 class mahasiswa
 {
 private:
-	static int nim;
+	static long int nim;
 
 public:
-	int id;
-	string name;
+	long int id;
+	string nama;
 
 	void setID();
 	void printAll();
@@ -17,4 +17,24 @@ public:
 	static void setNim(int pNim) { nim = pNim; }
 	static int getNim() { return nim; }
 
+	mahasiswa(string pnama)
+	{
+		nama = pnama;
+		setID();
+	}
 };
+
+int long mahasiswa::nim = 20230140126;
+
+void mahasiswa::setID()
+{
+	id = ++nim;
+}
+
+void mahasiswa::printAll()
+{
+	cout << "ID = " << id << endl;
+	cout << "Nama = " << nama << endl;
+	cout << endl;
+}
+
